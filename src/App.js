@@ -1,4 +1,5 @@
 import "./App.css";
+import logo from "./image/header-logo.png";
 import visual1 from "./image/main-visual1.png";
 import visual2 from "./image/main-visual2.png";
 import visual3 from "./image/main-visual3.png";
@@ -98,7 +99,7 @@ function App() {
       slides.style.left = -num * slideWidth + "px";
       currentIdx = num;
       console.log(currentIdx, slideCount);
-      if (currentIdx == slideCount || currentIdx == -slideCount) {
+      if ((currentIdx = slideCount || currentIdx === -slideCount)) {
         setTimeout(function () {
           slides.classList.remove("animated");
           slides.style.left = "0px";
@@ -120,7 +121,9 @@ function App() {
     <body>
       <header>
         <h1>
-          <a href="/01-pokomon/pocketmon.html"></a>
+          <a href="#visual">
+            <img src={logo} alt="" />
+          </a>
         </h1>
         <div className="menu">
           <nav>
@@ -172,7 +175,6 @@ function App() {
             </li>
           </ul>
         </div>
-        <a className="store" href="https://www.pokemonstore.co.kr/" />
       </header>
       <main>
         <section id="visual">
@@ -180,32 +182,32 @@ function App() {
             <ul className="slides">
               <li>
                 <a href="https://pokemonkorea.co.kr/legends_z-a">
-                  <img className="pc" src={visual1} />
-                  <img className="mobile" src={visualmo1} />
+                  <img className="pc" src={visual1} alt="" />
+                  <img className="mobile" src={visualmo1} alt="" />
                 </a>
               </li>
               <li>
                 <a href="https://pokemonkorea.co.kr/pokemon_champions">
-                  <img className="pc" src={visual2} />
-                  <img className="mobile" src={visualmo2} />
+                  <img className="pc" src={visual2} alt="" />
+                  <img className="mobile" src={visualmo2} alt="" />
                 </a>
               </li>
               <li>
                 <a href="https://pokemoncard.co.kr/card/731">
-                  <img className="pc" src={visual3} />
-                  <img className="mobile" src={visualmo3} />
+                  <img className="pc" src={visual3} alt="" />
+                  <img className="mobile" src={visualmo3} alt="" />
                 </a>
               </li>
               <li>
                 <a href="https://pokemoncard.co.kr/card/750">
-                  <img className="pc" src={visual4} />
-                  <img className="mobile" src={visualmo4} />
+                  <img className="pc" src={visual4} alt="" />
+                  <img className="mobile" src={visualmo4} alt="" />
                 </a>
               </li>
               <li>
                 <a href="https://pokemoncard.co.kr/card/740">
-                  <img className="pc" src={visual5} />
-                  <img className="mobile" src={visualmo5} />
+                  <img className="pc" src={visual5} alt="" />
+                  <img className="mobile" src={visualmo5} alt="" />
                 </a>
               </li>
             </ul>
@@ -222,7 +224,7 @@ function App() {
                 <li>
                   <a href="https://www.nintendo.com/kr/switch/sv/updateData.html">
                     <div className="image">
-                      <img src={banner1} />
+                      <img src={banner1} alt="" />
                     </div>
                     <div className="bx">
                       <div className="text">
@@ -241,7 +243,7 @@ function App() {
                 <li>
                   <a href="https://pokemonkorea.co.kr/pokemonhome/menu300?number=3645&mode=view">
                     <div className="image">
-                      <img src={banner2} />
+                      <img src={banner2} alt="" />
                     </div>
                     <div className="bx">
                       <div className="text">
@@ -260,7 +262,7 @@ function App() {
                 <li>
                   <a href="https://www.pokemonsleep.net/ko/">
                     <div className="image">
-                      <img src={banner3} />
+                      <img src={banner3} alt="" />
                     </div>
                     <div className="bx">
                       <div className="text">
@@ -279,7 +281,7 @@ function App() {
                 <li>
                   <a href="https://www.pokemonkorea.co.kr/2024_3rd_project">
                     <div className="image">
-                      <img src={banner4} />
+                      <img src={banner4} alt="" />
                     </div>
                     <div className="bx">
                       <div className="text">
@@ -311,7 +313,7 @@ function App() {
                 <a href="https://pokemoncard.co.kr/card/750">
                   <div>
                     <div className="tump-wrp">
-                      <img src={news1} />
+                      <img src={news1} alt="" />
                     </div>
                   </div>
                   <div className="text">
@@ -339,7 +341,7 @@ function App() {
                 <a href="https://pokemonkorea.co.kr/koreanleague_2025/menu583">
                   <div>
                     <div className="tump-wrp">
-                      <img src={news2} />
+                      <img src={news2} alt="" />
                     </div>
                   </div>
                   <div className="text">
@@ -367,7 +369,7 @@ function App() {
                 <a href="https://pokemonkorea.co.kr/cardshopmd">
                   <div>
                     <div className="tump-wrp">
-                      <img src={news3} />
+                      <img src={news3} alt="" />
                     </div>
                   </div>
                   <div className="text">
@@ -395,7 +397,7 @@ function App() {
                 <a href="https://www.pokemonkorea.co.kr/SV9_tournament">
                   <div>
                     <div className="tump-wrp">
-                      <img src={news4} />
+                      <img src={news4} alt="" />
                     </div>
                   </div>
                   <div className="text">
@@ -423,7 +425,7 @@ function App() {
                 <a href="https://pokemonkorea.co.kr/news/2/16724?cate=0&sword=">
                   <div>
                     <div className="tump-wrp">
-                      <img src={news5} />
+                      <img src={news5} alt="" />
                     </div>
                   </div>
                   <div className="text">
@@ -451,7 +453,7 @@ function App() {
                 <a href="https://pokemoncard.co.kr/card/740">
                   <div>
                     <div className="tump-wrp">
-                      <img src={news6} />
+                      <img src={news6} alt="" />
                     </div>
                   </div>
                   <div className="text">
@@ -481,7 +483,7 @@ function App() {
                 <a href="https://www.youtube.com/watch?v=F--XZqBjhFc">
                   <div>
                     <div className="tump-wrp">
-                      <img src={news7} />
+                      <img src={news7} alt="" />
                     </div>
                   </div>
                   <div className="text">
@@ -509,7 +511,7 @@ function App() {
                 <a href="https://pokemoncard.co.kr/card/734">
                   <div>
                     <div className="tump-wrp">
-                      <img src={news8} />
+                      <img src={news8} alt="" />
                     </div>
                   </div>
                   <div className="text">
@@ -537,7 +539,7 @@ function App() {
                 <a href="https://www.instagram.com/metamong._.project/">
                   <div>
                     <div className="tump-wrp">
-                      <img src={news9} />
+                      <img src={news9} alt="" />
                     </div>
                   </div>
                   <div className="text">
@@ -565,7 +567,7 @@ function App() {
                 <a href="https://pokemonkorea.co.kr/news/2/16612?cate=0&sword=">
                   <div>
                     <div className="tump-wrp">
-                      <img src={news10} />
+                      <img src={news10} alt="" />
                     </div>
                   </div>
                   <div className="text">
@@ -593,7 +595,7 @@ function App() {
                 <a href="https://pokemoncard.co.kr/card/731">
                   <div>
                     <div className="tump-wrp">
-                      <img src={news11} />
+                      <img src={news11} alt="" />
                     </div>
                   </div>
                   <div className="text">
@@ -621,7 +623,7 @@ function App() {
                 <a href="https://pokemoncard.co.kr/card/729">
                   <div>
                     <div className="tump-wrp">
-                      <img src={news12} />
+                      <img src={news12} alt="" />
                     </div>
                   </div>
                   <div className="text">
@@ -656,7 +658,7 @@ function App() {
           <div className="container">
             <div className="row">
               <div className="left">
-                <img src={gameleft} />
+                <img src={gameleft} alt="" />
               </div>
               <div className="right">
                 <h2>게임</h2>
@@ -665,7 +667,7 @@ function App() {
                     <li>
                       <a href="https://pokemonkorea.co.kr/pokemon_tcg_pocket">
                         <div className="image">
-                          <img src={game1} />
+                          <img src={game1} alt="" />
                         </div>
                         <div className="text">
                           <h3>「포켓몬 카드 게임 Pocket」 절찬 배포 중!</h3>
@@ -675,11 +677,11 @@ function App() {
                     <li>
                       <a href="https://pokemonkorea.co.kr/sv_dlc">
                         <div className="image">
-                          <img src={game2} />
+                          <img src={game2} alt="" />
                         </div>
                         <div className="text">
                           <h3>
-                            {`                          「포켓몬스터스칼렛・바이올렛 제로의 비보」<후편:                          남청의 원반> 배포 개시!                        `}
+                            {`「포켓몬스터스칼렛・바이올렛 제로의 비보」<후편:남청의 원반> 배포 개시!`}
                           </h3>
                         </div>
                       </a>
@@ -687,7 +689,7 @@ function App() {
                     <li>
                       <a href="https://pokemonkorea.co.kr/detective_pikachu">
                         <div className="image">
-                          <img src={game3} />
+                          <img src={game3} alt="" />
                         </div>
                         <div className="text">
                           <h3>「돌아온 명탐정 피카츄」 절찬 판매 중!</h3>
@@ -697,7 +699,7 @@ function App() {
                     <li>
                       <a href="https://pokemonkorea.co.kr/sv">
                         <div className="image">
-                          <img src={game4} />
+                          <img src={game4} alt="" />
                         </div>
                         <div className="text">
                           <h3>「포켓몬스터스칼렛・바이올렛」 공식 사이트</h3>
@@ -707,7 +709,7 @@ function App() {
                     <li>
                       <a href="https://www.pokemonsleep.net/ko/">
                         <div className="image">
-                          <img src={game5} />
+                          <img src={game5} alt="" />
                         </div>
                         <div className="text">
                           <h3>「Pokémon Sleep」 절찬 배포 중!</h3>
@@ -717,7 +719,7 @@ function App() {
                     <li>
                       <a href="https://www.pokemongoplusplus.com/ko/">
                         <div className="image">
-                          <img src={game6} />
+                          <img src={game6} alt="" />
                         </div>
                         <div className="text">
                           <h3>「Pokémon GO Plus +」 발매 개시!</h3>
@@ -739,7 +741,7 @@ function App() {
                   <h3>온라인 스토어</h3>
                   <a href="https://www.pokemonstore.co.kr/">
                     MORE
-                    <img src={more} />
+                    <img src={more} alt="" />
                   </a>
                 </div>
                 <div className="swiper-container">
@@ -751,7 +753,7 @@ function App() {
                           href="https://pokemonstore.co.kr/pages/product/list.html?categoryNo=488333&orderBy=register"
                         >
                           <div className="image">
-                            <img src={porodeuct1} />
+                            <img src={porodeuct1} alt="" />
                           </div>
                           <div className="text">
                             <h4>포켓몬 스토어 METAMONG Cherry Blossom</h4>
@@ -764,7 +766,7 @@ function App() {
                           href="https://pokemonstore.co.kr/pages/product/list.html?depth=2&categoryNo=873091"
                         >
                           <div className="image">
-                            <img src={porodeuct2} />
+                            <img src={porodeuct2} alt="" />
                           </div>
                           <div className="text">
                             <h4>포켓몬 스토어 Lucky for you</h4>
@@ -777,7 +779,7 @@ function App() {
                           href="https://pokemonstore.co.kr/pages/product/list.html?depth=2&categoryNo=870578"
                         >
                           <div className="image">
-                            <img src={porodeuct3} />
+                            <img src={porodeuct3} alt="" />
                           </div>
                           <div className="text">
                             <h4>포켓몬센터 전국도감 메탈참</h4>
@@ -793,7 +795,7 @@ function App() {
                   <h3>라이센스 상품</h3>
                   <a href="https://pokemonkorea.co.kr/goods">
                     MORE
-                    <img src={more} />
+                    <img src={more} alt="" />
                   </a>
                 </div>
                 <div className="swiper-container">
@@ -805,7 +807,7 @@ function App() {
                           href="https://e.kakao.com/t/gorapaduck-is-back?lang=ko&t_ch=co_mkt"
                         >
                           <div className="image">
-                            <img src={porodeuct4} />
+                            <img src={porodeuct4} alt="" />
                           </div>
                           <div className="text">
                             <h4>「내가왔덕 고라파덕」카카오 이모티콘 출시!!</h4>
@@ -818,7 +820,7 @@ function App() {
                           href="https://m.fredit.co.kr/product/detail?prdId=5365"
                         >
                           <div className="image">
-                            <img src={porodeuct5} />
+                            <img src={porodeuct5} alt="" />
                           </div>
                           <div className="text">
                             <h4>얼려먹고 거꾸로 먹는 포켓몬 야쿠르트!!</h4>
@@ -831,7 +833,7 @@ function App() {
                           href="https://brand.naver.com/damtuh"
                         >
                           <div className="image">
-                            <img src={porodeuct6} />
+                            <img src={porodeuct6} alt="" />
                           </div>
                           <div className="text">
                             <h4>포켓몬 콤부차 새로운 플레이버 출시!</h4>
@@ -850,7 +852,7 @@ function App() {
         <div className="top">
           <div className="container">
             <a className="logo" href="./pocketmon.html">
-              <img src={footerlogo} />
+              <img src={footerlogo} alt="" />
             </a>
             <ul>
               <li>
@@ -900,32 +902,6 @@ function App() {
                 <li>사업자등록번호:113-86-07676</li>
               </ul>
             </div>
-            <ul className="right">
-              <li>
-                <a
-                  className="instagram"
-                  href="https://www.instagram.com/pokemon_korea_official/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
-                />
-              </li>
-              <li>
-                <a
-                  className="youtube"
-                  href="https://www.youtube.com/user/PokemonKoreaInc"
-                />
-              </li>
-              <li>
-                <a className="twitter" href="https://x.com/PokemonKoreaInc" />
-              </li>
-              <li>
-                <a
-                  className="tiktok"
-                  href="https://www.tiktok.com/@pokemon_kor"
-                />
-              </li>
-              <li>
-                <a className="Pocket" href="https://www.pokemonstore.co.kr/" />
-              </li>
-            </ul>
           </div>
         </div>
         <div className="btm">
