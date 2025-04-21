@@ -99,16 +99,6 @@ function App() {
       slides.style.left = -num * slideWidth + "px";
       currentIdx = num;
       console.log(currentIdx, slideCount);
-      if ((currentIdx = slideCount || currentIdx === -slideCount)) {
-        setTimeout(function () {
-          slides.classList.remove("animated");
-          slides.style.left = "0px";
-          currentIdx = 0;
-        }, 500);
-        setTimeout(function () {
-          slides.classList.add("animated");
-        }, 600);
-      }
     }
     //페이지 자동이동
     setInterval(sliderEffect, 8000);
