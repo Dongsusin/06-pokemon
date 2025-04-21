@@ -53,8 +53,6 @@ function App() {
       slideWidth = window.innerWidth, //슬라이더 크기
       prevBtn = document.querySelector(".prev"), //이전 페이지 버튼
       nextBtn = document.querySelector(".next"); //다음 페이지 버튼
-
-    makeClone();
     //슬라이더 복제본 생성
     function makeClone() {
       for (let i = 0; i < slideCount; i++) {
@@ -89,10 +87,12 @@ function App() {
     //다음 페이지 버튼 클릭
     nextBtn.addEventListener("click", function () {
       moveSlide(currentIdx + 1);
+      makeClone();
     });
     //이전 페이지 버튼 클릭
     prevBtn.addEventListener("click", function () {
       moveSlide(currentIdx - 1);
+      makeClone();
     });
     //페이지 이동
     function moveSlide(num) {
