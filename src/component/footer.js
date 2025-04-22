@@ -38,9 +38,6 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-        <a className="btn-top" href="#">
-          {" "}
-        </a>
       </div>
       <div className="mdl">
         <div className="container">
