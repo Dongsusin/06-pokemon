@@ -40,7 +40,6 @@ function App() {
     function updateWidth() {
       let currentSlides = document.querySelectorAll(".slides li");
       let newSlideCount = currentSlides.length;
-
       let newWidth = slideWidth * newSlideCount + "px";
       slides.style.width = newWidth;
     }
