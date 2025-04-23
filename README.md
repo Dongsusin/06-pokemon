@@ -1,6 +1,7 @@
 # 🐣 POKEMON 클론 사이트
 
 **🚀 배포 링크**: [클론 사이트 바로가기](https://fluffy-puffpuff-f27c33.netlify.app/)
+**🚀 블로그**: [블로그 바로가기](https://blog.naver.com/auroratime020715/223843517704)
 
 React를 이용하여 만들어본 pokemon 클론사이트 입니다.
 
@@ -9,8 +10,6 @@ React를 이용하여 만들어본 pokemon 클론사이트 입니다.
 <br>
 
 ## 컴포넌트 구성
-
-(https://blog.naver.com/auroratime020715/223843517704)
 
 - header(헤더 컴포넌트)
 - visual(무한 스크롤 관리 컴포넌트)
