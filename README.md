@@ -10,6 +10,8 @@ React를 이용하여 만들어본 pokemon 클론사이트 입니다.
 
 ## 컴포넌트 구성
 
+(https://blog.naver.com/auroratime020715/223843517704)
+
 - header(헤더 컴포넌트)
 - visual(무한 스크롤 관리 컴포넌트)
 - banner(각 배너를 호버로 다루는 컴포넌트)

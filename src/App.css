@@ -162,9 +162,6 @@ header {
     background-image: url(./image/header-icon-login.png);
   }
 }
-.nav-up {
-  top: -120px;
-}
 /*main*/
 main {
   padding-top: 120px;
