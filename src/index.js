@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 <input type="checkbox" style="margin-right: 5px;" id="noShowToday">
                   오늘 다시 보지 않기
               </label>
-              <br>
               <button style="
                   margin-left: 12px; padding: 4px 12px; border-radius: 4px; border: none;
                   background-color: #333; color: white; cursor: pointer;
