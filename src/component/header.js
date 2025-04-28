@@ -45,7 +45,7 @@ export const Header = () => {
         </nav>
         <ul className="acc">
           <li>
-            <a href="https://helpful-starburst-392168.netlify.app/">
+            <a href="https://brilliant-alfajores-bbb341.netlify.app/">
               <i className="icon-ball-c" />
               포켓몬 도감
             </a>
